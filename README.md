@@ -1,0 +1,11 @@
+## Unit 4 Query Catalogue
+
+| Query File                        | Requirement / Technique                                                    | Business Question / Description                                                                                                 |
+| :-------------------------------- | :------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| `queries/unit4/q4_1.sql` (Q1)     | Platform-wide Aggregates (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`, `DISTINCT`) | What are the count, total, average, minimum, and maximum of fares across all bookings, and how many distinct passengers appear? |
+| `queries/unit4/q4_1.sql` (Q2)     | Per-Producer Grouping (`GROUP BY`, `ORDER BY DESC`)                        | What is the booking count and average fare for each flight (producer), sorted from most to least bookings?                      |
+| `queries/unit4/q4_1.sql` (Q3)     | Volume Filtering (`HAVING`)                                                | Which flights have enough booking volume (at least 5 bookings) for their average fare to be representative?                     |
+| `queries/unit4/q4_1.sql` (Q4)     | Two-Dimension Grouping (`GROUP BY` multiple columns)                       | How do booking counts and average fares vary across flights and booking countries (regions) combined?                           |
+| `queries/unit4/q4_2.sql` (Part A) | Conditional Aggregation (`SUM(CASE WHEN ... THEN 1 ELSE 0 END)`)           | For each flight, what is the total event count and total failure count in a single pass without a global WHERE filter?          |
+| `queries/unit4/q4_2.sql` (Part B) | Subtotals & Grand Totals (`GROUP BY ROLLUP`)                               | What are the regional and status subtotals and platform grand total of bookings without individual detail rows?                 |
+| `queries/unit4/q4_2.sql` (Part C) | Two-Step Pipeline (`WITH` CTE + Aggregation)                               | What is the average booking count and fare baseline across established high-volume producers?                                   |
